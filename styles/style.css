@@ -1,0 +1,30 @@
+/* Define custom variables */
+:root {
+    --primaryColor: darkcyan;
+    --secondaryColor: rgb(255, 28, 44);
+    --alternativeColor: rgb(15, 22, 100);
+    --tealBlueColor: #043b5c;
+    --whiteText:white;
+    /* none | h-offset (X) v-offset (Y) blur spread color |inset|initial|inherit*/
+    --mainBoxShadow: .3vw .3vw 1vw rgba(22, 69, 62, 1);
+}
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #191970;
+}
+h1 {
+    padding-top: 2rem;
+    text-align: center;
+    justify-content: center;
+}
+h2 {
+    padding-top: 1.5rem;
+    text-align: center;
+    justify-content: center;
+}
