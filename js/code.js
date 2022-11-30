@@ -122,12 +122,12 @@
 -doWhile
 -forEach
  */
-let numbers = [8, 9, 3, 12, 34];
-let people = {
-    name: 'Matt',
-    surname: 'Thomas',
-    email: 'matt@example.com'
-}
+// let numbers = [8, 9, 3, 12, 34];
+// let people = {
+//     name: 'Matt',
+//     surname: 'Thomas',
+//     email: 'matt@example.com'
+// }
 // To Target/Read properties an index of the Array //
 // for(let numb in numbers) {
 //     console.log(numb);
@@ -160,4 +160,54 @@ let people = {
 //     console.log(`Step:${cnt}`);
 // cnt
 // }
+// ===========================================================================
+// Functions-How to write a normal Function(function (param) {  }) //
+// function addition(numb1, numb2) {
+//     console.log("Sum is: ",numb1 + numb2);
+// }
+// addition(4,5);
+// addition(5,7);
+// addition(9,23);
+// Arrow-Function //
+// let addition = (num1, num2)=> {
+//     console.log("Sum of num1,num2: ",num1 + num2);
+// }
+//  addition(5,5);
+//Example of Subtraction //
+// let subtraction = (num1,num2) =>{
+//     return num1 - num2;
+//     // return num2 - num1;
+// }
+// console.log('Difference is:', subtraction(5,4));
+// Arrow-Function 2nd Approach //
+// ((numb1, numb2)=>{
+//     console.log(numb1 + numb2);
+// })(8, 2);
+// ===========================================================================
+// Factory-Function //
+
+// ===========================================================================
+// Constructor-Function //
+function Person(...details) { 
+    this.firstName = details[0];
+    this.lastName = details[1];
+    this.email = details.at(-1);
+ }
+ let person1 = new Person("Darius", "Baine", "dariusbaine@exapmle.com")
+ console.log(person1);
+ console.table(person1);
+// ===========================================================================
+// Ternary Operators //
+// let age = 17;
+// console.log( age >17 ? "You are Qualified" : "You not Qualified");
+// Rest-Operator //
+// function sumOf(...args) {
+//     return args.reduce( (a, b)=>{
+//         return a + b
+//     })
+// }
+// console.log(sumOf(1, 2, 3));
+// ===========================================================================
+//  Onclick //
+
 // ===========================================================================
