@@ -72,29 +72,31 @@
 //         console.log("January");
 //     break;
 //     case 2:
-//         console.log("Febuary");
+//         console.log("February");
 //     break;
 // }
-let grade = 75;
-switch(true) {
-    case grade == 100:
-        console.log("You're awesome");
-    break;
-    case (grade >= 90) && (grade <= 99):
-        console.log("Well done");
-    break;
-    case (grade >= 75) && (grade <= 89):
-        console.log("Distinction");
-    break;
-    case (grade >= 50) && (grade <= 74):
-        console.log("Pass");
-    break;
-    case (grade <=49) && (Math.sign(grade) !=-1 ):
-        console.log("Fail");
-    break;
-    default:
-        console.log("Out of range");
-}// ===========================================================================
+// Second Approach //
+// let grade = 75;
+// switch(true) {
+//     case grade == 100:
+//         console.log("You're awesome");
+//     break;
+//     case (grade >= 90) && (grade <= 99):
+//         console.log("Well done");
+//     break;
+//     case (grade >= 75) && (grade <= 89):
+//         console.log("Distinction");
+//     break;
+//     case (grade >= 50) && (grade <= 74):
+//         console.log("Pass");
+//     break;
+//     case (grade <=49) && (Math.sign(grade) !=-1 ):
+//         console.log("Fail");
+//     break;
+//     default:
+//         console.log("Out of range");
+// }
+// ===========================================================================
 // AddEventListeners //
 // let grandParent = document.querySelector(".grandparent") 
 // let parent = document.querySelector(".parent") 
@@ -111,3 +113,34 @@ switch(true) {
 // console.log(sentence.toLowerCase());
 // console.log(sentence.split(', '));
 // console.log(sentence.concat("and Malware Coding"));
+// ===========================================================================
+/* Loops
+-forIn
+-forOf
+-for(; ;)
+-while
+-doWhile
+-forEach
+ */
+let numbers = [8, 9, 3, 12, 34];
+let people = {
+    name: 'Matt',
+    surname: 'Thomas',
+    email: 'matt@example.com'
+}
+// To Target/Read properties an index of the Array //
+// for(let numb in numbers) {
+//     console.log(numb);
+// } 
+// console.table(numbers);
+// for(let p in people) {
+//     console.log(`${p} => ${people[p]}`);
+// }
+// To display the elements of an Array for-of //
+// for(let numb of numbers) {
+//     console.log(numb);
+// }
+for(let p of people) {
+    console.log(people);
+}
+// ===========================================================================
