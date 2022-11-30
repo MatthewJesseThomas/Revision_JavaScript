@@ -140,7 +140,24 @@ let people = {
 // for(let numb of numbers) {
 //     console.log(numb);
 // }
-for(let p of people) {
-    console.log(people);
-}
+// for(let p of people) {
+//     console.log(people);
+// }
+// for(;;)-InfiniteLoop //
+// for(;;) {
+//     console.log("Lets find out");
+// }
+// for(let i = 0; i<5; i++) {
+//     console.log("Silim Hubur");
+// }
+// While-Loop (Infinite loop) //
+// let cnt = 0;
+// while(cnt < 10) {
+//     console.log(`Step:${cnt}`);
+// }
+// let cnt = 0;
+// while(cnt < 10) {
+//     console.log(`Step:${cnt}`);
+// cnt
+// }
 // ===========================================================================

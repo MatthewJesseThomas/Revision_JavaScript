@@ -48,7 +48,16 @@ Revision JavaScript
 
 // =============================================================
 -Loops:
-
+/* Loops
+-forIn
+-forOf
+-for(; ;)
+-while
+-doWhile
+-forEach
+ */
+•1-for in is to read the properties of an array, the for of loop is to display the contents or elements of an array.
+•2-while loop is a loop the reads the code to check if the statements Boolean and if it is true runs the code if false it won't an loops infinite(Will do the checking before hand), do-while is a loop that does what a while loop does but waits for a false value to stop running the lines of code(Will do the checking after) .
 
 
 
