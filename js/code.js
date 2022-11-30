@@ -188,14 +188,14 @@
 
 // ===========================================================================
 // Constructor-Function //
-function Person(...details) { 
-    this.firstName = details[0];
-    this.lastName = details[1];
-    this.email = details.at(-1);
- }
- let person1 = new Person("Darius", "Baine", "dariusbaine@exapmle.com")
- console.log(person1);
- console.table(person1);
+// function Person(...details) { 
+//     this.firstName = details[0];
+//     this.lastName = details[1];
+//     this.email = details.at(-1);
+//  }
+//  let person1 = new Person("Darius", "Baine", "dariusbaine@exapmle.com")
+//  console.log(person1);
+//  console.table(person1);
 // ===========================================================================
 // Ternary Operators //
 // let age = 17;
