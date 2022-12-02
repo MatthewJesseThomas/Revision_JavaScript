@@ -212,9 +212,9 @@
 
 // ===========================================================================
 // Unary Operator
-function add(){
-    let x = document.getElementById('first')
-    .value != undefined ? document.getElementById('first').value : 10;
-    let y = document.getElementById('second').value != undefined ? document.getElementById('second').value : 9;
-    console.log( +x + +y);
-}
+// function add(){
+//     let x = document.getElementById('first')
+//     .value != undefined ? document.getElementById('first').value : 10;
+//     let y = document.getElementById('second').value != undefined ? document.getElementById('second').value : 9;
+//     console.log( +x + +y);
+// }

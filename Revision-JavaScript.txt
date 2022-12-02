@@ -248,3 +248,14 @@ function add(){
     console.log( +x + +y);
 }
 // =============================================================
+-Extra-Content
+•Unary operator: Done
+•Reduce: 
+•Mapping: 
+•Hoisting: 
+•Rest operator: 
+•What is an API: 
+•Fetch API: 
+•Asynchronous function using fetch api: 
+Challenge for the rest of the day (Group exercise)
+// =============================================================
