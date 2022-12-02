@@ -240,14 +240,6 @@ function Person(...details) {
 
 
 // =============================================================
--Unary Operator:
-function add(){
-    let x = document.getElementById('first')
-    .value != undefined ? document.getElementById('first').value : 10;
-    let y = document.getElementById('second').value != undefined ? document.getElementById('second').value : 9;
-    console.log( +x + +y);
-}
-// =============================================================
 -Extra-Content
 •Unary operator: Done
 •Reduce: 
@@ -259,3 +251,40 @@ function add(){
 •Asynchronous function using fetch api: 
 Challenge for the rest of the day (Group exercise)
 // =============================================================
+-Unary Operator:
+function add(){
+    let x = document.getElementById('first')
+    .value != undefined ? document.getElementById('first').value : 10;
+    let y = document.getElementById('second').value != undefined ? document.getElementById('second').value : 9;
+    console.log( +x + +y);
+}
+// =============================================================
+-Reduce:
+// Reduce-(To get the sum of an Array) //
+// let numbers = [1, 2, 3, 4, 5];
+// let sum = numbers.reduce((a, b)=>{
+//     return a + b;
+//     // return a * b;
+// })
+// console.log(`Sum Of: ${sum}`);
+// =============================================================
+-Mapping:
+let numbers = [1, 2, 3, 4, 5];
+let double = numbers.map((item)=> {
+    return item*2;
+})
+console.log('Current Array: ', numbers);
+console.log('Double: ', double);
+// =============================================================
+-Hoisting:
+
+// =============================================================
+-
+// =============================================================
+-
+// =============================================================
+-
+// =============================================================
+-
+
+-
