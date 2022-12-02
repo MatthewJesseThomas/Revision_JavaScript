@@ -193,28 +193,40 @@ function Person(...details) {
  console.table(person1);
 // =============================================================
 -Onclick:
-
-
-
-
-
-
-
-
-
-
+<form>
+    <input id="numb1" type="number" placeholder="Please Enter Num1" required>
+    <input id="numb2" type="number" placeholder="Please Enter Num2" required>
+    <label id="output"></label>
+    <button onclick="addition(event)">Addition</button>
+</form>
 // =============================================================
 -AddEventListener:
+// function addition(e){
+//     e.preventDefault();
+//     let numb1 = document.querySelector("#numb1").value;
+//     let numb2 = document.querySelector("#numb2").value;
+//     document.querySelector('#output').innerText = eval(`${numb1} + ${numb2}`);
+// }
+// 2nd Approach //
+// function addition(e){
+//     e.preventDefault();
+//     let numb1 = document.querySelector("#numb1").value;
+//     let numb2 = document.querySelector("#numb2").value;
+//     // document.querySelector('#output').innerText = eval(`${numb1} + ${numb2}`);
+//     document.querySelector('#output').innerText = 
+//     parseInt(numb1) + parseInt(numb2);
+// }
+// ===========================================================================
+// Step-2 //
+// let btnAddition = document.querySelector('button');
+// btnAddition.addEventListener('click', (e)=>{
+//     e.preventDefault();
+//     let numb1 = document.querySelector("#numb1").value;
+//     let numb2 = document.querySelector("#numb2").value;
+//     document.querySelector('#output').innerText = 
+//     parseInt(numb1) + parseInt(numb2);
 
-
-
-
-
-
-
-
-
-
+// })
 // =============================================================
 -Fetch Api:
 
