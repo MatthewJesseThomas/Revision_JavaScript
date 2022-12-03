@@ -257,26 +257,26 @@
 // ===========================================================================
 // Asynchronous-API //
 //
-// fetch('https://api.chucknorris.io/jokes/random')
-// .then((res)=>{
-//     return res.json();
-// })
-// .then((data)=>{
-//     let tbody = document.querySelector('tbody');
-//     Object.keys(data).forEach( (item)=>{
-//         if(data[item].length){
-//             console.log(`${item}: ${data[item]}`);
-//             tbody.innerHTML +=
-//             `
-//                 <tr>
-//                     <td>${item}</td>
-//                     <td>${data[item]}</td>
-//                 </tr>
-//             `
-//         }
-//         console.log(item);
-//     } )
-// })
+fetch('https://api.chucknorris.io/jokes/random')
+.then((res)=>{
+    return res.json();
+})
+.then((data)=>{
+    let tbody = document.querySelector('tbody');
+    Object.keys(data).forEach( (item)=>{
+        if(data[item].length){
+            console.log(`${item}: ${data[item]}`);
+            tbody.innerHTML +=
+            `
+                <tr>
+                    <td>${item}</td>
+                    <td>${data[item]}</td>
+                </tr>
+            `
+        }
+        console.log(item);
+    } )
+})
 // ===========================================================================
 // Async 1st-Example//
 // (async function fetchData() {
