@@ -1,22 +1,25 @@
 {
-    "fantasyCharacters":[
+    "SurrealAzhdaya":[
             {
-                "id":1,
-                "firstName":"Vlad",
-                "surName":"Tepes",
-                "email":"Vamp1r3@email.com"
+                "Id":1,
+                "FirstName":"Vlad",
+                "SurName":"Tepes",
+                "Powers":"superhuman strength, speed, stamina, agility, and reflexes",
+                "WeaponCombat":"The Kilij was a curved Turkish sword. It was the Close-Range weapon of Vlad the Impaler. Among other weapons were the Halberd, Steel Crossbow, Hand Cannon."
             },
             {
-                "id":2,
-                "firstName":"Frank",
-                "surName":"Stein",
-                "email":"frankenStein@email.com"
+                "Id":2,
+                "FirstName":"Frank",
+                "SurName":"Stein",
+                "Powers":"superhuman strength, an incredible degree of stamina and constitution, and a high level of resistance to pain.",
+                "WeaponCombat":"Swordsmanship · Marksmanship · Advanced Hand-to-Hand Combat."
             },
             {
-                "id":3,
-                "firstName":"Van",
-                "surName":"Hellsing",
-                "email":"hunter666@email.com"
+                "Id":3,
+                "FirstName":"Van",
+                "SurName":"Hellsing",
+                "Powers":"Van Hellsing is a doctor, he is a practitioner of medicine. He is supposed to represent science and advancement, yet he relies in the use of old fashioned or ancient practices to resolve conflicts.",
+                "WeaponCombat":"Skills: Hand-to-Hand Combat; Firearms; Melee Weapons; Athletics; Stealth; Tracking; Hunting; Occult Lore; Religion; Longevity; Peak Physique."
             }
     ]
 }

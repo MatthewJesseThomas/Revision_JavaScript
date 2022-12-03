@@ -331,3 +331,13 @@
 //         console.log("Out of range");
 // }
 // =============================================================
+// Fetch-API //
+// fetch('../data/data.json',)
+//     .then((res)=>{
+//         return res.json();
+//     })
+//     .then((data)=>{ 
+//         console.log(data);
+//         console.table(data.SurrealAzhdaya);
+//     });
+// =============================================================
