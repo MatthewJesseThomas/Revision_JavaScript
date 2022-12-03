@@ -6,6 +6,7 @@
         "concat",
         "Gami",
         "Gelus",
+        "Hellsing",
         "Hubur",
         "Midora",
         "Onclick",
@@ -13,5 +14,8 @@
         "Silim",
         "trunc",
         "typeof"
+    ],
+    "cSpell.ignoreWords": [
+        "Tepes"
     ]
 }

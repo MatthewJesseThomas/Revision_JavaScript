@@ -161,6 +161,21 @@
 // cnt
 // }
 // ===========================================================================
+// For-Loops //
+// let rating = [1, 2, 3, 4, 5, 6];
+// let cars = {
+//     Brand1: 'Toyota',
+//     Brand2: 'Alpha Romeo',
+//     Brand3: 'BMW',
+//     Brand4: 'Tesla'
+// }
+// for(let rate in rating) {
+//         console.log(rating.length);
+//     } 
+// for(let mobile in cars) {
+//         console.log(cars.Brand1);
+//     } 
+// ===========================================================================
 // Functions-How to write a normal Function(function (param) {  }) //
 // function addition(numb1, numb2) {
 //     console.log("Sum is: ",numb1 + numb2);
@@ -208,8 +223,20 @@
 // }
 // console.log(sumOf(1, 2, 3));
 // ===========================================================================
-//  Onclick //
-
+//  Conditionals //
+// let magic = [
+//     "Tier1",
+//     "Tier2",
+//     "Tier3",
+//     "Tier4",
+//     "Tier5",
+//     "Tier6"
+// ];
+// if( magic = "Tier6") {
+//     console.log("You are Mage");
+// }else{
+//     console.log("You are not Mage");
+// }
 // ===========================================================================
 // Unary Operator
 // function add(){
@@ -218,3 +245,89 @@
 //     let y = document.getElementById('second').value != undefined ? document.getElementById('second').value : 9;
 //     console.log( +x + +y);
 // }
+// ===========================================================================
+// Fetch-API //
+// fetch('../data/data.json',).then((res)=>{
+//     return res.json();
+// })
+// .then((data)=>{ 
+//     console.log(data);
+//     console.table(data.fantasyCharacters);
+// })
+// ===========================================================================
+// Asynchronous-API //
+//
+// fetch('https://api.chucknorris.io/jokes/random')
+// .then((res)=>{
+//     return res.json();
+// })
+// .then((data)=>{
+//     let tbody = document.querySelector('tbody');
+//     Object.keys(data).forEach( (item)=>{
+//         if(data[item].length){
+//             console.log(`${item}: ${data[item]}`);
+//             tbody.innerHTML +=
+//             `
+//                 <tr>
+//                     <td>${item}</td>
+//                     <td>${data[item]}</td>
+//                 </tr>
+//             `
+//         }
+//         console.log(item);
+//     } )
+// })
+// ===========================================================================
+// Async 1st-Example//
+// (async function fetchData() {
+//     let res = await fetch("../data/data.json");
+//     let data = await res.json();
+//     console.log(data.results);
+// })();
+// =============================================================
+// Async 2nd-Example//
+//row
+// let wrapper = document.querySelector('.wrapper');
+// async function fetchData() {
+//     let res = await fetch("https://randomuser.me/api?results=100");
+//     let data = await res.json();
+//     return data.results;
+//   }
+// (async function display() {
+//     let data = await fetchData()
+//     data.forEach((item) => {
+//       console.log(item);
+//     wrapper.innerHTML +=`
+//     <div class="card" style="width: 18rem;">
+//         <img src="${item.picture.large}" class="card-img-top" alt="${item.name}">
+//         <div class="card-body">
+//         <h5 class="card-title">${item.name.first} ${item.name.last}</h5>
+//         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+//         <a href="#" class="btn btn-primary">Go somewhere</a>
+//         </div>
+//     </div>`
+//     });
+//   })();
+// =============================================================
+// Switch Case //
+// let grade = 55;
+// switch(true) {
+//     case grade == 100:
+//         console.log("A+ :" + 'Congrats');
+//     break;
+//     case (grade >= 90) && (grade <= 99):
+//         console.log("A :" + 'Hooray');
+//     break;
+//     case (grade >= 75) && (grade <= 89):
+//         console.log("B+ :" + 'WellDone');
+//     break;
+//     case (grade >= 50) && (grade <= 74):
+//         console.log("B :" + 'Try Harder');
+//     break;
+//     case (grade <=49) && (Math.sign(grade) !=-1 ):
+//         console.log("C :" + 'Keep On Studying');
+//     break;
+//     default:
+//         console.log("Out of range");
+// }
+// =============================================================

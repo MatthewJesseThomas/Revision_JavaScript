@@ -229,16 +229,92 @@ function Person(...details) {
 // })
 // =============================================================
 -Fetch Api:
-
-
-
-
-
-
-
-
-
-
+// JSON-Syntax //
+{
+    "fantasyCharacters":[
+            {
+                "id":1,
+                "firstName":"Vlad",
+                "surName":"Tepes",
+                "email":"Vamp1r3@email.com"
+            },
+            {
+                "id":2,
+                "firstName":"Frank",
+                "surName":"Stein",
+                "email":"frankenStein@email.com"
+            },
+            {
+                "id":3,
+                "firstName":"Van",
+                "surName":"Hellsing",
+                "email":"hunter666@email.com"
+            }
+    ]
+}
+// ===========================================================================
+// Fetch-API //
+// fetch('../data/data.json',).then((res)=>{
+//     return res.json();
+// })
+// .then((data)=>{ 
+//     console.log(data);
+//     console.table(data.fantasyCharacters);
+// })
+// ===========================================================================
+// Asynchronous-API //
+//
+// fetch('https://api.chucknorris.io/jokes/random')
+// .then((res)=>{
+//     return res.json();
+// })
+// .then((data)=>{
+//     let tbody = document.querySelector('tbody');
+//     Object.keys(data).forEach( (item)=>{
+//         if(data[item].length){
+//             console.log(`${item}: ${data[item]}`);
+//             tbody.innerHTML +=
+//             `
+//                 <tr>
+//                     <td>${item}</td>
+//                     <td>${data[item]}</td>
+//                 </tr>
+//             `
+//         }
+//         console.log(item);
+//     } )
+// })
+// ===========================================================================
+// Async 1st-Example//
+// (async function fetchData() {
+//     let res = await fetch("../data/data.json");
+//     let data = await res.json();
+//     console.log(data.results);
+// })();
+// =============================================================
+// Async 2nd-Example//
+//row
+// let wrapper = document.querySelector('.wrapper');
+// async function fetchData() {
+//     let res = await fetch("https://randomuser.me/api?results=100");
+//     let data = await res.json();
+//     return data.results;
+//   }
+// (async function display() {
+//     let data = await fetchData()
+//     data.forEach((item) => {
+//       console.log(item);
+//     wrapper.innerHTML +=`
+//     <div class="card" style="width: 18rem;">
+//         <img src="${item.picture.large}" class="card-img-top" alt="${item.name}">
+//         <div class="card-body">
+//         <h5 class="card-title">${item.name.first} ${item.name.last}</h5>
+//         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+//         <a href="#" class="btn btn-primary">Go somewhere</a>
+//         </div>
+//     </div>`
+//     });
+//   })();
 // =============================================================
 -Extra-Content
 •Unary operator: Done
@@ -277,11 +353,33 @@ console.log('Current Array: ', numbers);
 console.log('Double: ', double);
 // =============================================================
 -Hoisting:
+// Hoisting-(Ability to call a function before declaring it.)//
+// function addition(a, b) {
+//     console.log(a + b);
+// }
+// addition(5, 6);
+// =============================================================
+-Rest Operator:
+// Rest Operator- Allows for unlimited No. of Arguments //
+// function addition(...reich) {
+//     let sum = reich.reduce((a,b)=>{
+//         return a + b;
+//     }) 
+//     console.log(sum);
+    // console.log(reich);
+// }
+// addition(1, 2, 3);
+// Example# //
+// function additionOf(...reich) {
+//     let sum = reich.filter(Number).reduce((a, b)=>{
+//         return a + b;
+//     })
+//     console.log(sum);
+// }
+// additionOf(7, 8, 5, 'Matt');
+// =============================================================
+-Conditionals:
 
-// =============================================================
--
-// =============================================================
--
 // =============================================================
 -
 // =============================================================
